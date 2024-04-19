@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+;Turn off search highlights in Taskbar
+;https://github.com/darianmiller/windows_new_install_settings/issues/2
+;Takes effect immediately
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SearchSettings]
+"IsDynamicSearchBoxEnabled"=dword:00000000
