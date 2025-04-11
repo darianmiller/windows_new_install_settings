@@ -33,15 +33,21 @@ Windows Registry Editor Version 5.00
 
 
 ;Disable "Show me suggested content in the Settings app"  Privacy and Security Settings (General)  https://github.com/darianmiller/windows_new_install_settings/issues/4
+;Disable Get tips and suggestions when using windows  338389
+;Disable Windows Welcome Experience 310093
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
 "SubscribedContent-338393Enabled"=dword:00000000
 "SubscribedContent-353694Enabled"=dword:00000000
 "SubscribedContent-353696Enabled"=dword:00000000
+"SubscribedContent-338389Enabled"=dword:00000000
+"SubscribedContent-310093Enabled"=dword:00000000
 
 
 ;Disable "Let Windows improve Start and search results by tracking app launches"  Privacy and Security Settings (General)  https://github.com/darianmiller/windows_new_install_settings/issues/4
+;Disable Show recommendations for tips, shortcuts, new apps, and more (Start_IrisRecommendations)
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "Start_TrackProgs"=dword:00000000
+"Start_IrisRecommendations"=dword:00000000
 
 
 ;Disable "Home" in sidebar of File Explorer
@@ -64,6 +70,11 @@ Windows Registry Editor Version 5.00
 ;Disable "Show me notifications in the Settings app" (Microsoft account push) Privacy and Security Settings (General)  https://github.com/darianmiller/windows_new_install_settings/issues/4
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SystemSettings\AccountNotifications]
 "EnableAccountNotifications"=dword:00000000
+
+
+;Disable "Let's finish setting up your device"
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\UserProfileEngagement]
+"ScoobeSystemSettingEnabled"=dword:00000000
 
 
 ;Turn off optional diagnostic data  https://github.com/darianmiller/windows_new_install_settings/issues/3
